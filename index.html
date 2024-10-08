@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7fa;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
             color: #2c3e50;
             display: flex;
             flex-direction: column;
@@ -22,58 +22,106 @@
             height: 100vh;
             overflow-x: hidden;
             user-select: none;
+            padding: 20px;
         }
 
         h1 {
-            font-size: 2.2em;
-            color: #34495e;
+            font-size: 3em;
+            color: #2c3e50;
             margin: 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #00897b;
         }
 
         .container {
             width: 90%;
             max-width: 700px;
-            background-color: #fff;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
         }
 
         table {
             width: 100%;
             border-collapse: separate;
-            border-spacing: 0 10px;
+            border-spacing: 0 15px;
             margin-bottom: 30px;
         }
 
         table th, table td {
             padding: 15px;
             text-align: left;
-            background-color: #ecf0f1;
-            border-radius: 10px;
-            font-size: 1em;
+            background-color: #f1f8e9;
+            border-radius: 12px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         table th {
-            background-color: #bdc3c7;
+            background-color: #c5e1a5;
             color: #2c3e50;
+            font-weight: bold;
+        }
+
+        table tr:hover td {
+            background-color: #c8e6c9;
+            transform: scale(1.02);
         }
 
         .homework {
             text-align: left;
+            margin-top: 30px;
         }
 
         .homework h2 {
-            font-size: 1.4em;
-            color: #34495e;
+            font-size: 2em;
+            color: #2c3e50;
             margin-bottom: 15px;
+            border-bottom: 2px solid #00897b;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        .homework h2:hover {
+            color: #00796b;
         }
 
         .homework p {
             margin-bottom: 10px;
-            font-size: 1em;
+            font-size: 1.1em;
             color: #7f8c8d;
+            transition: color 0.3s;
+        }
+
+        .homework p:hover {
+            color: #00897b;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .homework h2 {
+                font-size: 1.6em;
+            }
+
+            table th, table td {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
