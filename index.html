@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>7ATool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            overflow-x: hidden;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #34495e;
+            margin: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            margin-bottom: 30px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+        table th {
+            background-color: #bdc3c7;
+            color: #2c3e50;
+        }
+
+        .homework {
+            text-align: left;
+        }
+
+        .homework h2 {
+            font-size: 1.4em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .homework p {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Расписание на завтра</h1>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Предмет</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:30 - 9:10</td>
+                    <td>Биология</td>
+                </tr>
+                <tr>
+                    <td>9:30 - 10:10</td>
+                    <td>История</td>
+                </tr>
+                <tr>
+                    <td>10:30 - 11:10</td>
+                    <td>Русский</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:10</td>
+                    <td>Литература</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 13:10</td>
+                    <td>Алгебра</td>
+                </tr>
+                <tr>
+                    <td>13:25 - 14:05</td>
+                    <td>География</td>
+                </tr>
+                <tr>
+                    <td>14:15 - 14:55</td>
+                    <td>Геометрия</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="homework">
+            <h2>Домашнее задание</h2>
+            <p><strong>Биология:</strong> страница 114, номер 4, 5 письменно</p>
+            <p><strong>История:</strong> параграф 12, сделать доклад о протестантских движениях в новое время</p>
+            <p><strong>Русский:</strong> правила учить</p>
+            <p><strong>Литература:</strong> читать "Песня про царя Ивана..." и учить стихотворение Лермонтова</p>
+            <p><strong>Алгебра:</strong> номера 169, 171</p>
+            <p><strong>География:</strong> средняя глубина, солёность, рельеф дна, растительный и животный мир Тихого и Индийского океанов, оформить в таблице</p>
+            <p><strong>Геометрия:</strong> задания 68(б), 69</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('gesturestart', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
